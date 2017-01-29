@@ -56,7 +56,7 @@ var HttpHelper = (function () {
     return HttpHelper;
     var _a;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/HttpHelper.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/HttpHelper.js.map
 
 /***/ }),
 
@@ -93,7 +93,7 @@ var CategoriesService = (function () {
     return CategoriesService;
     var _a;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/categories.service.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/categories.service.js.map
 
 /***/ }),
 
@@ -138,7 +138,7 @@ var PostsService = (function () {
     return PostsService;
     var _a;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/posts.service.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/posts.service.js.map
 
 /***/ }),
 
@@ -182,7 +182,7 @@ var UsersService = (function () {
     return UsersService;
     var _a;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/users.service.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/users.service.js.map
 
 /***/ }),
 
@@ -227,7 +227,7 @@ var CategoriesComponent = (function () {
     return CategoriesComponent;
     var _a;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/categories.component.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/categories.component.js.map
 
 /***/ }),
 
@@ -269,7 +269,7 @@ var LessonsComponent = (function () {
     return LessonsComponent;
     var _a;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/lessons.component.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/lessons.component.js.map
 
 /***/ }),
 
@@ -315,7 +315,7 @@ var PostsComponent = (function () {
     return PostsComponent;
     var _a;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/posts.component.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/posts.component.js.map
 
 /***/ }),
 
@@ -358,7 +358,7 @@ var UsersComponent = (function () {
     return UsersComponent;
     var _a;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/users.component.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/users.component.js.map
 
 /***/ }),
 
@@ -395,7 +395,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=G:/Projekte/statibro/client/src/main.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/main.js.map
 
 /***/ }),
 
@@ -424,7 +424,7 @@ var LessonsService = (function () {
     ], LessonsService);
     return LessonsService;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/lessons.service.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/lessons.service.js.map
 
 /***/ }),
 
@@ -458,7 +458,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/app.component.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/app.component.js.map
 
 /***/ }),
 
@@ -544,7 +544,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=G:/Projekte/statibro/client/src/app.module.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/app.module.js.map
 
 /***/ }),
 
@@ -591,7 +591,7 @@ var AppRoutes = [
         component: __WEBPACK_IMPORTED_MODULE_3__lessons_lessons_component__["a" /* LessonsComponent */],
     }
 ];
-//# sourceMappingURL=G:/Projekte/statibro/client/src/app.routes.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/app.routes.js.map
 
 /***/ }),
 
@@ -607,7 +607,7 @@ var AppRoutes = [
 var environment = {
     production: false
 };
-//# sourceMappingURL=G:/Projekte/statibro/client/src/environment.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/environment.js.map
 
 /***/ }),
 
@@ -663,7 +663,7 @@ var environment = {
 
 
 
-//# sourceMappingURL=G:/Projekte/statibro/client/src/polyfills.js.map
+//# sourceMappingURL=G:/Projekte/statibroapp/client/src/polyfills.js.map
 
 /***/ }),
 
