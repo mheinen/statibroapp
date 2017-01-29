@@ -1,5 +1,3 @@
-import { PostsComponent } from './posts/posts.component';
-import { UsersComponent } from './users/users.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { LessonsComponent } from './lessons/lessons.component';
 
@@ -10,20 +8,8 @@ import { LessonsComponent } from './lessons/lessons.component';
 export const AppRoutes = [
   {
     path: '',
-    redirectTo: 'posts',
+    redirectTo: 'categories',
     pathMatch: 'full'
-  },
-  {
-    path: 'posts',
-    component: PostsComponent
-  },
-  {
-    path: 'test',
-    component: PostsComponent
-  },
-  {
-    path: 'register',
-    component: UsersComponent
   },
   {
     path: 'categories',

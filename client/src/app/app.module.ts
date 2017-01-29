@@ -4,17 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { PostsService } from './_services/posts.service';
-import { UsersService } from './_services/users.service';
 import { CategoriesService } from './_services/categories.service';
 import { LessonsService } from './_services/lessons.service';
 import { HttpHelper } from './_helper/HttpHelper';
 import { AppRoutes } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { PostsComponent } from './posts/posts.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { UsersComponent } from './users/users.component';
 import { LessonsComponent } from './lessons/lessons.component';
 
 
@@ -25,8 +21,6 @@ import { LessonsComponent } from './lessons/lessons.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent,
-    UsersComponent,
     CategoriesComponent,
     LessonsComponent
   ],
@@ -37,8 +31,6 @@ import { LessonsComponent } from './lessons/lessons.component';
     RouterModule.forRoot(AppRoutes)
   ],
   providers: [
-    PostsService,
-    UsersService,
     HttpHelper,
     CategoriesService,
     LessonsService
