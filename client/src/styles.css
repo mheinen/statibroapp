@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+.shadow {
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.shadow:hover {
+  box-shadow: 10px 10px 10px #888888;
+}
+.shadow2 {
+  box-shadow: 3px 3px 3px #888888;
+}

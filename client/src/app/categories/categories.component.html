@@ -1,0 +1,19 @@
+<div class="card shadow" *ngFor="let f of Categories" style="margin-bottom: 1vh">
+  <div class="card-block">
+    <h4 class="card-title">
+      <div class="media">
+        <img class="d-flex mr-3" src="{{f.iconSrc}}" alt="">
+        <div class="media-body">
+          <h3 class="mt-0">{{f.name}}</h3>
+          <h5>{{f.subtitle}}</h5>
+        </div>
+      </div>
+    </h4>
+    <p class="card-text">{{f.description}}</p>
+    <a [routerLink]="['/lessons', f._id]" routerLinkActive="active" class="card-link">Erklärung</a>
+    <a [routerLink]="['/categories', f._id]" routerLinkActive="active" class="card-link">Aufgaben</a>
+  </div>
+</div>
+
+
+
