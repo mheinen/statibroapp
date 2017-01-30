@@ -1,0 +1,29 @@
+<div id="wrapper-login" class="col-md-9 offset-md-2">
+  <div class="card shadow">
+    <div class="card-block">
+      <h4 class="card-title">Einloggen</h4>
+      <hr>
+      <div class="card-text">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" [style.display]="Error">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Email oder Passwort falsch!</strong> Falls du noch nicht registriert bist, dann
+          <a [routerLink]="['/categories']" routerLinkActive="active" class="alert-link">registriere dich hier</a> .
+        </div>
+
+        <form #f="ngForm" (ngSubmit)="onLogin(f.value)">
+          <div class="form-group col-sm-9">
+            <input type="email" class="form-control shadow2" id="email" name="email" required [(ngModel)]="Email" placeholder="E-Mail">
+          </div>
+          <div class="form-group col-sm-9">
+            <input type="password" minlength="8" class="form-control shadow2" name="password" id="inputPassword" [(ngModel)]="Password" placeholder="Passwort" required>
+          </div>
+          <hr>
+          <button class="btn btn-outline-success shadow2" type="submit">Einloggen</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

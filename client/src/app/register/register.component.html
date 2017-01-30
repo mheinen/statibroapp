@@ -1,0 +1,30 @@
+<div id="wrapper-register" class="col-md-9 offset-md-2">
+  <div class="card shadow">
+    <div class="card-block">
+      <h4 class="card-title">Registrieren</h4>
+      <hr>
+      <div class="card-text">
+        <form #f="ngForm" (ngSubmit)="onRegister(f.value)">
+          <div class="form-group col-sm-9">
+            <input type="text" class="form-control shadow2" id="nickname" name="nickname" required [(ngModel)]="Nickname" placeholder="Username - max 20 Zeichen" maxlength="20">
+          </div>
+          <div class="form-group col-sm-9">
+            <input type="email" class="form-control shadow2" id="email" name="email" required [(ngModel)]="Email" placeholder="E-Mail">
+          </div>
+          <hr>
+          <div class="form-group col-sm-9">
+            <input type="password" minlength="8" class="form-control shadow2" name="password" id="inputPassword" [(ngModel)]="Password" placeholder="Passwort" required>
+            <div class="help-block">Mindestens 8 Zeichen</div>
+          </div>
+          <div class="form-group col-sm-9" [class.has-warning]="Warning">
+            <input type="password" class="form-control form-control-warning shadow2" id="inputPasswordConfirm" name="password_confirmation" [(ngModel)]="PasswordConfirmation" (keyup)="checkPass()" placeholder="Passwort bestätigen" required>
+            <div class="form-control-feedback" [hidden]="!Warning">Passwörter stimmen nicht überein.</div>
+          </div>
+          <hr>
+          <button class="btn btn-outline-success shadow2" type="submit" [disabled]="NoMatch">Registrieren</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

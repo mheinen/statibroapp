@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  min-height: 100vh;
+  background-image: url('assets/images/statistics5.png');
+ // background-color: whitesmoke;
+}
 
 .shadow {
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 5px 5px #000000 ;
 }
 
 .shadow:hover {
-  box-shadow: 10px 10px 10px #888888;
+  box-shadow: 10px 10px 10px #000000;
 }
 .shadow2 {
-  box-shadow: 3px 3px 3px #888888;
+  box-shadow: 3px 3px 3px #000000;
 }

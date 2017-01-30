@@ -1,0 +1,46 @@
+<div class="card shadow" *ngFor="let t of Tasks" style="margin-bottom: 1vh">
+  <div class="card-block">
+    <h4 class="card-title">{{t.name}}</h4>
+    <p class="card-text">{{t.description}}</p>
+    <img *ngIf="t.image_src != '-'" src="{{t.image_src}}" class="img-fluid">
+    <div *ngIf="t.multiple_choice">
+      <form #f="ngForm"
+            (ngSubmit)="onSubmitMultipleChoice(f.value, t.answer)"
+            class="ui form">
+        <hr>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="radio" [(ngModel)]="radio" id="gridRadios1" value="{{t.option_one}}">
+            {{t.option_one}}
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="radio" [(ngModel)]="radio" id="gridRadios2" value="{{t.option_two}}">
+            {{t.option_two}}
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="radio" [(ngModel)]="radio" id="gridRadios3" value="{{t.option_three}}">
+            {{t.option_three}}
+          </label>
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-primary" [disabled]="Wrong || Correct">Abschicken</button>
+      </form>
+      <div [style.display]="Display">
+        <hr>
+        <div *ngIf="Correct" class="alert alert-success" role="alert">
+          <strong>Richtig</strong>
+          <p>{{t.correction}}</p>
+        </div>
+        <div *ngIf="Wrong" class="alert alert-danger" role="alert">
+          <strong>Leider nicht richtig</strong>
+          <p>{{t.correction}}</p>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="nextTask()">Nächste Aufgabe</button>
+      </div>
+    </div>
+  </div>
+</div>

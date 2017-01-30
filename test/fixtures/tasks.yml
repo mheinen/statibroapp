@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  multiple_choice: 
+  option_one: MyString
+  option_two: MyString
+  option_three: MyString
+  answer: MyString
+
+two:
+  name: MyString
+  description: MyString
+  multiple_choice: 
+  option_one: MyString
+  option_two: MyString
+  option_three: MyString
+  answer: MyString

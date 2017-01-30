@@ -12,9 +12,7 @@ export class LessonsComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log(this.route.snapshot.params);
-    console.log(this.route.snapshot.params['object']);
-    this.id = this.route.snapshot.params['object'];
+    this.id = this.route.snapshot.params['id'];
   }
 
 }
